@@ -65,7 +65,7 @@ Simulated Features:
 - Written in Arduino (PlatformIO or Arduino IDE)
 - Clone the repo:
   ```bash
-  git clone https://github.com/yourteam/smart-helmet
+  git clone https://github.com/Alpha-5002/RiderSafe
 
 Install dependencies:
  - Adafruit MPU6050
