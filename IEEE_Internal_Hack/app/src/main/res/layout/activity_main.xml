@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="32dp"
+    android:background="#F5F5F5">
+
+    <Button
+        android:id="@+id/getLocationBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📍 Get Location"
+        android:textAllCaps="false"
+        android:backgroundTint="#1976D2"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="20dp" />
+
+    <TextView
+        android:id="@+id/locationText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location will appear here"
+        android:textSize="18sp"
+        android:textColor="#333333"
+        android:layout_marginBottom="30dp" />
+
+    <Button
+        android:id="@+id/sendSmsBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🚨 Send Emergency SMS"
+        android:textAllCaps="false"
+        android:backgroundTint="#D32F2F"
+        android:textColor="#FFFFFF" />
+</LinearLayout>
