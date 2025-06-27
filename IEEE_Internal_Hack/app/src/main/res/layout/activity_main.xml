@@ -8,6 +8,16 @@
     android:background="#F5F5F5">
 
     <Button
+        android:id="@+id/simulateCrashBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Simulate Crash"
+        android:backgroundTint="#FFBF00"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="20dp"/>
+
+
+    <Button
         android:id="@+id/getLocationBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -16,6 +26,7 @@
         android:backgroundTint="#1976D2"
         android:textColor="#FFFFFF"
         android:layout_marginBottom="20dp" />
+
 
     <TextView
         android:id="@+id/locationText"
@@ -33,5 +44,7 @@
         android:text="🚨 Send Emergency SMS"
         android:textAllCaps="false"
         android:backgroundTint="#D32F2F"
-        android:textColor="#FFFFFF" />
+        android:textColor="#FFFFFF"
+        android:paddingTop="20dp"
+        android:layout_marginTop="20dp" />
 </LinearLayout>
