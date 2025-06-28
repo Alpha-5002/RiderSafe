@@ -27,7 +27,7 @@ This is the companion Android app for the **RiderSafe Smart Helmet** project. Th
 
 | Home Screen |
 |-------------|
-| ![UI Preview](IEEE_Internal_Hack/Screenshots/App UI.jpg) |
+|![UI Preview](./Android App/assets/ridersafe_ui.jpg)|
 
 
 ---
