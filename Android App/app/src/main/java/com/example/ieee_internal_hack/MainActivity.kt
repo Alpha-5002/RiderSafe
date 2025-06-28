@@ -8,6 +8,7 @@ import android.telephony.SmsManager
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
+import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
@@ -18,6 +19,8 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var locationClient: FusedLocationProviderClient
     private lateinit var locationText: TextView
+    private lateinit var phoneEditText: EditText
+
     private var currentLocation: Location? = null
 
     companion object {
@@ -29,7 +32,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        phoneEditText = findViewById(R.id.phoneEditText)
         locationText = findViewById(R.id.locationText)
+
         val getLocationBtn = findViewById<Button>(R.id.getLocationBtn)
         val sendSmsBtn = findViewById<Button>(R.id.sendSmsBtn)
         val simulateCrashBtn = findViewById<Button>(R.id.simulateCrashBtn)
@@ -93,7 +98,12 @@ class MainActivity : AppCompatActivity() {
             return
         }
 
-        val phoneNumber = "ENTER_YOUR_NUMBER_HERE"
+        val phoneNumber = phoneEditText.text.toString().trim()
+        if (phoneNumber.isEmpty()) {
+            Toast.makeText(this, "Please enter a valid phone number", Toast.LENGTH_SHORT).show()
+            return
+        }
+
         val message = "Emergency! Simulated crash at https://maps.google.com/?q=${currentLocation!!.latitude},${currentLocation!!.longitude}"
 
         try {
@@ -121,3 +131,4 @@ class MainActivity : AppCompatActivity() {
         }
     }
 }
+
