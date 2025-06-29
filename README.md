@@ -47,7 +47,12 @@ The Smart Helmet ensures rider safety through:
 The project is fully simulated using [Wokwi](https://wokwi.com):
 
 ### ▶️ Try the Wokwi Simulation:
+
+## Simulation with Basic Crash Detection Algorithm:
 > [Click here to open simulation](https://wokwi.com/projects/434656722268422145)
+
+## Simulation with Advanced Crash Detection Algorithm:
+> [Click here to open simulation](https://wokwi.com/projects/435110892409680897)
 
 Simulated Features:
 - Alcohol level via analog slider (MQ2)
